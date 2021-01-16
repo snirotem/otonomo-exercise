@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+// import logo from './logo.svg'
 import './App.css'
 import createStreamerFrom from './api/streamer'
 import generateCarData from './api/data-generator'
+import DetailsPage from './components/layout/detailsPage'
 
 class App extends Component {
   streamer = createStreamerFrom(() => generateCarData('12345678901234567'))
@@ -21,7 +22,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <DetailsPage />
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -34,7 +36,7 @@ class App extends Component {
             rel="noopener noreferrer">
             Learn React
           </a>
-        </header>
+        </header> */}
       </div>
     )
   }

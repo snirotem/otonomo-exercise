@@ -1,0 +1,72 @@
+.details-page {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    height: 100%;
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+        height: 100&;
+    }
+     
+    .button {
+        margin-right: 15px;
+        border-radius: 6px;
+    }
+
+    .list-component {
+        width: 30%;
+        min-width: 330px;
+        align-items: flex-start;
+        text-align: left;
+
+        .checkbox-label {
+            margin: 5px 0;
+        }
+
+        .header {
+            height: 50px;
+            justify-content: flex-start;
+            align-items: center;
+            display: flex;  
+            width: 100%;
+
+            .input {
+                margin-right: 15px;
+                flex-grow: 1;
+                border-radius: 6px;
+
+            }
+           
+        }
+        
+    }
+    .events-component {
+        width: 70%;
+        border: 1px solid lightgray;
+        
+
+        .header {
+            height: 50px;
+            padding: 0 50px;
+            border-bottom: 1px solid lightgray;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;  
+            
+            .total-events {
+                margin-right: 10px;
+            }
+        }
+        .events-list {
+            padding: 50px;
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
+
+            .car-event {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
